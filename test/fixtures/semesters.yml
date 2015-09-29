@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  semester: MyString
+  start: 2015-09-29
+  end: 2015-09-29
+  status: MyString
+  session_id: 
+
+two:
+  semester: MyString
+  start: 2015-09-29
+  end: 2015-09-29
+  status: MyString
+  session_id: 

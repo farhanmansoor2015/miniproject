@@ -1,0 +1,74 @@
+class TeacherassignsController < ApplicationController
+  before_action :set_teacherassign, only: [:show, :edit, :update, :destroy]
+
+  # GET /teacherassigns
+  # GET /teacherassigns.json
+  def index
+    @teacherassigns = Teacherassign.all
+  end
+
+  # GET /teacherassigns/1
+  # GET /teacherassigns/1.json
+  def show
+  end
+
+  # GET /teacherassigns/new
+  def new
+    @teacherassign = Teacherassign.new
+  end
+
+  # GET /teacherassigns/1/edit
+  def edit
+  end
+
+  # POST /teacherassigns
+  # POST /teacherassigns.json
+  def create
+    @teacherassign = Teacherassign.new(teacherassign_params)
+
+    respond_to do |format|
+      if @teacherassign.save
+        format.html { redirect_to @teacherassign, notice: 'Teacherassign was successfully created.' }
+        format.json { render :show, status: :created, location: @teacherassign }
+      else
+        format.html { render :new }
+        format.json { render json: @teacherassign.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PATCH/PUT /teacherassigns/1
+  # PATCH/PUT /teacherassigns/1.json
+  def update
+    respond_to do |format|
+      if @teacherassign.update(teacherassign_params)
+        format.html { redirect_to @teacherassign, notice: 'Teacherassign was successfully updated.' }
+        format.json { render :show, status: :ok, location: @teacherassign }
+      else
+        format.html { render :edit }
+        format.json { render json: @teacherassign.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /teacherassigns/1
+  # DELETE /teacherassigns/1.json
+  def destroy
+    @teacherassign.destroy
+    respond_to do |format|
+      format.html { redirect_to teacherassigns_url, notice: 'Teacherassign was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_teacherassign
+      @teacherassign = Teacherassign.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def teacherassign_params
+      params.require(:teacherassign).permit(:faculty_id, :session_id, :semester_id, :course_id)
+    end
+end

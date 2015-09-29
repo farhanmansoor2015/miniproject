@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @att_master.date %>
+</p>
+
+<p>
+  <strong>Topics:</strong>
+  <%= @att_master.topics %>
+</p>
+
+<p>
+  <strong>Datemarked:</strong>
+  <%= @att_master.datemarked %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @att_master.course %>
+</p>
+
+<p>
+  <strong>Teacherassign:</strong>
+  <%= @att_master.teacherassign %>
+</p>
+
+<%= link_to 'Edit', edit_att_master_path(@att_master) %> |
+<%= link_to 'Back', att_masters_path %>

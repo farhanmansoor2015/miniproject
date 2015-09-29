@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :att_details
+  resources :att_masters
+  resources :stu_reg_semesters
+  resources :students
+  resources :teacherassigns
+  resources :faculties
+  resources :semesters
+  resources :sessions
+  resources :courses
+  resources :programs
 root 'pages#home'
 get 'help' => 'pages#help'
 get 'about' => 'pages#about'

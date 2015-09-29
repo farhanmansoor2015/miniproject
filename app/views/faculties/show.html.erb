@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @faculty.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @faculty.lastname %>
+</p>
+
+<p>
+  <strong>Specialization:</strong>
+  <%= @faculty.specialization %>
+</p>
+
+<p>
+  <strong>Dateofbirth:</strong>
+  <%= @faculty.dateofbirth %>
+</p>
+
+<p>
+  <strong>Designation:</strong>
+  <%= @faculty.designation %>
+</p>
+
+<p>
+  <strong>Qualification:</strong>
+  <%= @faculty.qualification %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @faculty.address %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @faculty.local %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @faculty.contact %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @faculty.status %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @faculty.email %>
+</p>
+
+<%= link_to 'Edit', edit_faculty_path(@faculty) %> |
+<%= link_to 'Back', faculties_path %>

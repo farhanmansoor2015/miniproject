@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Faculty:</strong>
+  <%= @teacherassign.faculty %>
+</p>
+
+<p>
+  <strong>Session:</strong>
+  <%= @teacherassign.session %>
+</p>
+
+<p>
+  <strong>Semester:</strong>
+  <%= @teacherassign.semester %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @teacherassign.course %>
+</p>
+
+<%= link_to 'Edit', edit_teacherassign_path(@teacherassign) %> |
+<%= link_to 'Back', teacherassigns_path %>
