@@ -15,7 +15,7 @@
     <% @stu_reg_semesters.each do |stu_reg_semester| %>
       <tr>
         <td><%= stu_reg_semester.student.firstname %></td>
-        <td><%= stu_reg_semester.semester.semester %></td>
+        <td><%= stu_reg_semester.semester %></td>
         <td><%= link_to 'Show', stu_reg_semester %></td>
         <td><%= link_to 'Edit', edit_stu_reg_semester_path(stu_reg_semester) %></td>
         <td><%= link_to 'Destroy', stu_reg_semester, method: :delete, data: { confirm: 'Are you sure?' } %></td>

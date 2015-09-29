@@ -16,8 +16,8 @@
     <% @att_details.each do |att_detail| %>
       <tr>
         <td><%= att_detail.status %></td>
-        <td><%= att_detail.att_master.date %></td>
-        <td><%= att_detail.student.firstname %></td>
+        <td><%= att_detail.att_master %></td>
+        <td><%= att_detail.student %></td>
         <td><%= link_to 'Show', att_detail %></td>
         <td><%= link_to 'Edit', edit_att_detail_path(att_detail) %></td>
         <td><%= link_to 'Destroy', att_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>

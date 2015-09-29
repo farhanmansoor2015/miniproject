@@ -27,7 +27,7 @@
 
 <p>
   <strong>Program:</strong>
-  <%= @course.program.description %>
+  <%= @course.program.name %>
 </p>
 
 <%= link_to 'Edit', edit_course_path(@course) %> |

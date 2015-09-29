@@ -22,7 +22,7 @@
 
 <p>
   <strong>Program:</strong>
-  <%= @session.program.description %>
+  <%= @session.program %>
 </p>
 
 <%= link_to 'Edit', edit_session_path(@session) %> |

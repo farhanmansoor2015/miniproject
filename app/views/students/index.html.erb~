@@ -33,7 +33,7 @@
         <td><%= student.address %></td>
         <td><%= student.district %></td>
         <td><%= student.email %></td>
-        <td><%= student.session.description %></td>
+        <td><%= student.session %></td>
         <td><%= link_to 'Show', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
         <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>

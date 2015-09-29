@@ -12,12 +12,12 @@
 
 <p>
   <strong>Semester:</strong>
-  <%= @teacherassign.semester.semester %>
+  <%= @teacherassign.semester %>
 </p>
 
 <p>
   <strong>Course:</strong>
-  <%= @teacherassign.course.name %>
+  <%= @teacherassign.course %>
 </p>
 
 <%= link_to 'Edit', edit_teacherassign_path(@teacherassign) %> |

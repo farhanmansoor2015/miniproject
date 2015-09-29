@@ -52,7 +52,7 @@
 
 <p>
   <strong>Session:</strong>
-  <%= @student.session.description %>
+  <%= @student.session %>
 </p>
 
 <%= link_to 'Edit', edit_student_path(@student) %> |

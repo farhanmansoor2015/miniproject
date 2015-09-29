@@ -22,7 +22,7 @@
 
 <p>
   <strong>Teacherassign:</strong>
-  <%= @att_master.teacherassign_id %>
+  <%= @att_master.teacherassign.firstname %>
 </p>
 
 <%= link_to 'Edit', edit_att_master_path(@att_master) %> |

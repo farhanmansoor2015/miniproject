@@ -20,7 +20,7 @@
         <td><%= att_master.date %></td>
         <td><%= att_master.topics %></td>
         <td><%= att_master.datemarked %></td>
-        <td><%= att_master.course.name %></td>
+        <td><%= att_master.course.description %></td>
         <td><%= att_master.teacherassign_id %></td>
         <td><%= link_to 'Show', att_master %></td>
         <td><%= link_to 'Edit', edit_att_master_path(att_master) %></td>

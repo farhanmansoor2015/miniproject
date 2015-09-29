@@ -22,7 +22,7 @@
 
 <p>
   <strong>Session:</strong>
-  <%= @semester.session.description %>
+  <%= @semester.session.semester %>
 </p>
 
 <%= link_to 'Edit', edit_semester_path(@semester) %> |

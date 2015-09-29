@@ -7,7 +7,7 @@
 
 <p>
   <strong>Semester:</strong>
-  <%= @stu_reg_semester.semester.semester %>
+  <%= @stu_reg_semester.semester %>
 </p>
 
 <%= link_to 'Edit', edit_stu_reg_semester_path(@stu_reg_semester) %> |

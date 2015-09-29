@@ -21,7 +21,7 @@
         <td><%= semester.start %></td>
         <td><%= semester.end %></td>
         <td><%= semester.status %></td>
-        <td><%= semester.session.description %></td>
+        <td><%= semester.session.semester %></td>
         <td><%= link_to 'Show', semester %></td>
         <td><%= link_to 'Edit', edit_semester_path(semester) %></td>
         <td><%= link_to 'Destroy', semester, method: :delete, data: { confirm: 'Are you sure?' } %></td>

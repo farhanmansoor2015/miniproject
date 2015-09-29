@@ -7,12 +7,12 @@
 
 <p>
   <strong>Att master:</strong>
-  <%= @att_detail.att_master.date %>
+  <%= @att_detail.att_master %>
 </p>
 
 <p>
   <strong>Student:</strong>
-  <%= @att_detail.student.firstname %>
+  <%= @att_detail.student %>
 </p>
 
 <%= link_to 'Edit', edit_att_detail_path(@att_detail) %> |
