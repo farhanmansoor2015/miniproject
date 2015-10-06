@@ -11,6 +11,8 @@
       <th>Offersemester</th>
       <th>Objectives</th>
       <th>Program</th>
+      <th>Start</th>
+      <th>End</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,7 +25,9 @@
         <td><%= course.description %></td>
         <td><%= course.offersemester %></td>
         <td><%= course.objectives %></td>
-        <td><%= course.program_id %></td>
+        <td><%= course.program.description %></td>
+        <td><%= course.start %></td>
+        <td><%= course.End %></td>
         <td><%= link_to 'Show', course %></td>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>
         <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>

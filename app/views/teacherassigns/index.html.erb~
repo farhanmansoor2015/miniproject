@@ -16,10 +16,10 @@
   <tbody>
     <% @teacherassigns.each do |teacherassign| %>
       <tr>
-        <td><%= teacherassign.faculty.firstname %></td>
-        <td><%= teacherassign.session.description %></td>
+        <td><%= teacherassign.faculty_id %></td>
+        <td><%= teacherassign.session_id %></td>
         <td><%= teacherassign.semester.semester %></td>
-        <td><%= teacherassign.course.description %></td>
+        <td><%= teacherassign.course.name %></td>
         <td><%= link_to 'Show', teacherassign %></td>
         <td><%= link_to 'Edit', edit_teacherassign_path(teacherassign) %></td>
         <td><%= link_to 'Destroy', teacherassign, method: :delete, data: { confirm: 'Are you sure?' } %></td>

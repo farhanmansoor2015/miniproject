@@ -27,7 +27,16 @@
 
 <p>
   <strong>Program:</strong>
-  <%= @course.program.name %>
+  <%= @course.program.description %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @course.start %>
+</p>
+<p>
+  <strong>End:</strong>
+  <%= @course.end %>
 </p>
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
